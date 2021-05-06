@@ -11,6 +11,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.triviaapp.Model.Question;
+import com.example.triviaapp.R;
+import com.example.triviaapp.View.util.SimpleDividerItemDecoration;
+import com.example.triviaapp.ViewModel.Adapter.CustomAdapter;
+import com.example.triviaapp.ViewModel.Db.GameDbHelper;
+
 import java.util.ArrayList;
 
 public class ResultActivity extends AppCompatActivity {
@@ -35,7 +41,7 @@ public class ResultActivity extends AppCompatActivity {
         button_start_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(com.deftskill.triviaapp.Activity.ResultActivity.this, MainActivity.class);
+                Intent i = new Intent(ResultActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }
