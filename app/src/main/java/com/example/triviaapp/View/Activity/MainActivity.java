@@ -12,7 +12,7 @@ import com.example.triviaapp.View.Fragments.Fragment3;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    FrameLayout contentContainer;
+     private FrameLayout contentContainer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
